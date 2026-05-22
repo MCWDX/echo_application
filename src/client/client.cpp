@@ -7,6 +7,8 @@
 
 #include <nlohmann/json.hpp>
 
+namespace echoapplication {
+
 Client::Client() {
     std::ifstream config_file("./config/client_config.json");
     if (!config_file.is_open()) {
@@ -302,3 +304,5 @@ void Client::cleanUp() {
     epoll_fd_.close();
     conn_fd_.close();
 }
+
+} // namespace echoapplication

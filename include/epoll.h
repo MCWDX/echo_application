@@ -3,6 +3,8 @@
 #include <sys/epoll.h>
 #include <vector>
 
+namespace echoapplication {
+
 class Epoll {
 public:
     Epoll();
@@ -27,3 +29,5 @@ public:
 private:
     int epoll_fd_{-1};
 };
+
+} // namespace echoapplication

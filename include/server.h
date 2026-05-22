@@ -13,6 +13,8 @@
 #include <spdlog/sinks/stdout_color_sinks.h>
 #include <nlohmann/json.hpp>
 
+namespace echoapplication {
+
 class Server {
 public:
     using Header = MessageHeader;
@@ -65,3 +67,5 @@ private:
 
     termios flags_;
 };
+
+}// namespace echoapplication

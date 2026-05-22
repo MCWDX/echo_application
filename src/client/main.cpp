@@ -1,5 +1,7 @@
 #include "client.h"
 
+using echoapplication::Client;
+
 int main() {
     try {
         Client client;

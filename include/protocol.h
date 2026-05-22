@@ -3,6 +3,8 @@
 #include <cstdint>
 #include <string>
 
+namespace echoapplication {
+
 struct MessageHeader {
     MessageHeader() = default;
     explicit MessageHeader(uint16_t type) : msg_type(type) {}
@@ -22,3 +24,5 @@ enum class MsgType {
     GROUP_MSG = 5,
     USER_LIST = 6
 };
+
+} // namespace echoapplication

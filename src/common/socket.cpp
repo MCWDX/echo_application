@@ -8,6 +8,8 @@
 #include <stdexcept>    //for std::runtime_error
 #include <cstring>      //for strlen
 
+namespace echoapplication {
+
 Socket::Socket(Socket&& other) : socket_fd_(other.socket_fd_) {
     other.socket_fd_ = -1;
 }
@@ -260,3 +262,5 @@ const std::string Socket::getPeerAddr() const {
     }
     return addr;
 }
+
+} // namespace echoapplication

@@ -1,5 +1,7 @@
 #include "server.h"
 
+using echoapplication::Server;
+
 int main() {
     try {
         Server server;

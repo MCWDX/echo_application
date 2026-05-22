@@ -5,6 +5,8 @@
 #include <stdexcept>
 #include <iostream>
 
+namespace echoapplication {
+
 Epoll::Epoll() {
     create();
 }
@@ -139,3 +141,5 @@ void Epoll::close() {
         epoll_fd_ = -1;
     }
 }
+
+} // namespace echoapplication

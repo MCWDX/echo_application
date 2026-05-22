@@ -6,6 +6,8 @@
 #include <string>           //for std::string
 #include <vector>
 
+namespace echoapplication {
+
 class Socket {
 public:
     Socket() = default;
@@ -42,3 +44,5 @@ public:
 private:
     int socket_fd_{-1};
 };
+
+} // namespace echoapplication

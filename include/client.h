@@ -10,6 +10,8 @@
 
 #include <nlohmann/json.hpp>
 
+namespace echoapplication {
+
 class Client {
 public:
     using Header = MessageHeader;
@@ -47,3 +49,5 @@ private:
 
     termios flags;
 };
+
+} // namespace echoapplication

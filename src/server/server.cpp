@@ -8,6 +8,8 @@
 #include <cstring>      //for memcpy
 #include <fstream>      //for ifstream
 
+namespace echoapplication {
+
 Server::Server() {
     // 加载config
     std::ifstream config_file("./config/server_config.json");
@@ -379,3 +381,5 @@ void Server::shutdown() {
     }
     shutdown_ = true;
 }
+
+} // namespace echoapplication

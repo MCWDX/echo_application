@@ -20,11 +20,11 @@ target_include_directories(common PUBLIC ${PROJECT_SOURCE_DIR}/include)
 add_executable(server src/server/server.cpp src/server/main.cpp)
 target_link_libraries(server PRIVATE common)
 set_target_properties(server PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/test/unit
+    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/server
 )
 
 add_executable(client src/client/client.cpp src/client/main.cpp)
 target_link_libraries(client PRIVATE common)
 set_target_properties(client PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/test/unit
+    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/client
 )
